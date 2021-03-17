@@ -1,0 +1,85 @@
+
+.grid-container {
+    background-color: #F1F7ED;
+    display: grid;
+    grid-gap: 16px 16px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-areas:
+        "header nav nav"
+        "text nav nav"
+        "text aside-e aside-d"
+        "text aside-e dynamic"
+        "footer footer footer";
+}
+
+.grid-hamburger {
+    background-color: transparent;
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.grid-text {
+    background-color: #E5E8B6;
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+
+}
+
+.grid-nav {
+    background-color: #7D869C;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.grid-aside-d {
+    background-color: #B4C4AE;
+    grid-area: aside-d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.grid-aside-e {
+    background-color: #A2ABAB;
+    grid-area: aside-e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.grid-picture {
+    background-color: #586994;
+    grid-area: dynamic;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+.grid-footer {
+    background-color: #E5E8B6;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
